@@ -1,0 +1,176 @@
+
+.upper-nav .bg-light{
+        padding: 0px;
+}
+.sec-nav{
+    background-color: #345E8B;
+    
+}
+.sec-nav .navbar-light .navbar-nav .nav-link{
+    font:18px/34px Noto Kufi Arabic;
+    color: #FFFFFF;
+    margin-left: 20px;
+}
+.slider .carousel-inner img {
+   width: 100%;
+  height: 80%;
+  }
+.slider .carousel-caption h3{
+    font: Bold 41px/78px Noto Kufi Arabic;
+color: #FFFFFF;
+    opacity: 1;
+}
+/*start most visited ratings*/
+.ratings h4{
+    font: Bold 30px/56px Noto Kufi Arabic;
+    color: #C84D2D;
+}
+.ratings img{
+       width: 270px;
+    padding-bottom: 15px;
+}
+.ratings h3{
+font: Bold 22px/42px Noto Kufi Arabic;
+margin-bottom: -10px;
+color: #FFFFFF;
+}
+.ratings .float-left .arrow-btn,.product .float-left .arrow-btn,.ablik .float-left .arrow-btn{
+    background-color:#345E8B;
+    color: #fff;
+   
+}
+
+/*end most visited ratings*/
+/*start product luminance*/
+.product h4{
+    font: Bold 30px/56px Noto Kufi Arabic;
+    color: #C84D2D;
+}
+.product h5{
+font: 22px/42px Noto Kufi Arabic;
+letter-spacing: 0px;
+color: #000000;
+}
+.product span{
+font:7px/32px Noto Kufi Arabic;
+color: #000000;
+}
+.product .span-product{
+    font: 17px/32px Noto Kufi Arabic;
+color: #C84D2D;
+    margin-right: 10px;
+}
+.product button{
+    padding:5px 20px;
+    background: #345E8B 0% 0% no-repeat padding-box;
+border-radius: 4px;
+    color: #fff;
+}
+.product .product-img {
+           width: 580px;
+    padding-bottom: 15px;
+    box-shadow: 0px 3px 10px #0000000D;
+border-radius: 8px;
+}
+/*end product luminance*/
+/*start request*/
+.request h4{
+    font: Bold 30px/56px Noto Kufi Arabic;
+    color: #C84D2D;
+}
+.request  h5{
+font: 20px/42px Noto Kufi Arabic;
+letter-spacing: 0px;
+color: #000000;
+}
+.request span{
+font:7px/32px Noto Kufi Arabic;
+color: #000000;
+}
+.request .span-product{
+    font: 17px/32px Noto Kufi Arabic;
+color: #C84D2D;
+    margin-right: 10px;
+}
+.request button{
+    padding:5px 20px;
+    background: #345E8B 0% 0% no-repeat padding-box;
+border-radius: 4px;
+    color: #fff;
+}
+/*end request*/
+/*start brand*/
+.brands h4{
+    font: Bold 30px/56px Noto Kufi Arabic;
+    color: #C84D2D;
+}
+.brands img{
+    width:279px;
+    border: 3px solid #E3E3E9;
+border-radius: 10px;
+        width: 250px;
+}
+
+/*end brand*/
+/*start ablik*/
+.ablik h4{
+    font: Bold 30px/56px Noto Kufi Arabic;
+    color: #C84D2D;
+}
+.ablik  h5{
+font: 20px/42px Noto Kufi Arabic;
+letter-spacing: 0px;
+color: #000000;
+}
+.ablik span{
+font:7px/32px Noto Kufi Arabic;
+color: #000000;
+}
+.ablik .span-product{
+    font: 17px/32px Noto Kufi Arabic;
+color: #C84D2D;
+    margin-right: 10px;
+}
+.ablik button{
+    padding:5px 20px;
+    background: #345E8B 0% 0% no-repeat padding-box;
+border-radius: 4px;
+    color: #fff;
+}
+.ablik .last-butt a :last-of-type{
+    
+    background-color:#F3F3F4;
+
+}
+/*end ablik*/
+/*start footer*/
+.footer{
+    background-color: #F3F3F4;
+    color: #fff;
+}
+.footer h6{
+    font: Bold 22px/42px Noto Kufi Arabic;
+color: #345E8B;
+}
+.footer p:first-of-type{
+    font: 18px/37px Noto Kufi Arabic;
+color: #000000;
+}
+.footer a{
+    font: 18px/30px Noto Kufi Arabic;
+color: #000000;
+}
+.footer hr{
+  background-color: #fff;
+}
+ .e-footer{background-color: #E3E3E3}
+.e-footer i{
+    background-color: #345E8B;
+    color: #ffff;
+   width: 61%;
+    border-radius: 50%;
+    padding-right: 6px;
+    height: 58%;
+    padding-top: 5px;
+}
+/*end footer*/
