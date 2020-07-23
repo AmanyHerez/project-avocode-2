@@ -1,4 +1,13 @@
-
+@font-face {
+	font-family: "JF Flat Regular";
+	src: url(../fonts/JF-Flat-regular.eot);
+    src: url(../fonts/JF-Flat-regular.eot?#iefix) format('embedded-opentype'),
+         url('../fonts/JF-Flat-regular.svg#JF Flat Regular') format('svg'),
+         url(../fonts/JF-Flat-regular.woff) format('woff'),
+         url(../fonts/JF-Flat-regular.ttf) format('truetype');
+	font-weight: bolder;
+	font-style: normal
+}
 .upper-nav .bg-light{
         padding: 0px;
 }
@@ -7,19 +16,74 @@
     
 }
 .sec-nav .navbar-light .navbar-nav .nav-link{
+    	font-family: "JF Flat Regular", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
     font:18px/34px Noto Kufi Arabic;
     color: #FFFFFF;
     margin-left: 20px;
 }
+.sec-nav .navbar-light .navbar-nav .nav-link:hover{
+     background-color:#0079C2;
+    font-weight: bold;
+    border-radius:10px;
+ 
+}
 .slider .carousel-inner img {
-   width: 100%;
-  height: 80%;
+
+  width: 100%;
+   height: 80%;
+   background-size: cover;
   }
 .slider .carousel-caption h3{
     font: Bold 41px/78px Noto Kufi Arabic;
 color: #FFFFFF;
     opacity: 1;
 }
+.slider a{
+    color: #fff;
+    background-color: #888;
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+    margin-top: 18%;
+    margin-right: 25px;
+    margin-left: 25px;
+    
+}
+@media(max-width:576px){
+    .slider .carousel-inner img {
+   height: 60%;
+  
+  }
+    .slider a{
+   margin-top: 45%; 
+}
+    .product .card,.request .card,.brands img{
+        margin-bottom:15px;
+    }  
+    .product .product-img  {
+           width: 365px !important;
+    }
+    .product h4,.request h4,.ablik  h4{
+           float: right;
+        padding-right: 20px;
+    }
+    product h4{
+        padding-right: 0px;
+        
+    }
+    .product .float-left .arrow-btn{
+             margin-bottom: -53px;
+    }
+    .request .float-left .arrow-btn{
+            margin-bottom: -143px;
+        
+    }
+    .ablik .float-left .arrow-btn{
+            margin-bottom: -205px;
+        
+    }
+    }
 /*start most visited ratings*/
 .ratings h4{
     font: Bold 30px/56px Noto Kufi Arabic;
@@ -34,12 +98,11 @@ font: Bold 22px/42px Noto Kufi Arabic;
 margin-bottom: -10px;
 color: #FFFFFF;
 }
-.ratings .float-left .arrow-btn,.product .float-left .arrow-btn,.ablik .float-left .arrow-btn{
+.ratings .float-left .arrow-btn,.product .float-left .arrow-btn,.ablik .float-left .arrow-btn,.request .float-left .arrow-btn{
     background-color:#345E8B;
     color: #fff;
-   
+    margin-top: -80px;
 }
-
 /*end most visited ratings*/
 /*start product luminance*/
 .product h4{
@@ -47,6 +110,8 @@ color: #FFFFFF;
     color: #C84D2D;
 }
 .product h5{
+	font-family: "JF Flat Regular", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
 font: 22px/42px Noto Kufi Arabic;
 letter-spacing: 0px;
 color: #000000;
@@ -108,7 +173,20 @@ border-radius: 4px;
     width:279px;
     border: 3px solid #E3E3E9;
 border-radius: 10px;
-        width: 250px;
+width: 250px;
+}
+.brands .carousel-inner ul{
+        margin-bottom: -3rem;
+}
+.brands .carousel-indicators li{
+    height: 9px;
+    width: 9px;
+    margin: 2px;
+    border-radius: 50%;
+    background-color:#C84D2D;
+}
+.brands .carousel-indicators{
+        margin-bottom: -3rem;
 }
 
 /*end brand*/
@@ -116,10 +194,10 @@ border-radius: 10px;
 .ablik h4{
     font: Bold 30px/56px Noto Kufi Arabic;
     color: #C84D2D;
+    margin-top: 50px;
 }
 .ablik  h5{
 font: 20px/42px Noto Kufi Arabic;
-letter-spacing: 0px;
 color: #000000;
 }
 .ablik span{
