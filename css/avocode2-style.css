@@ -83,6 +83,14 @@ color: #FFFFFF;
             margin-bottom: -205px;
         
     }
+    .ratings .content-ratings{
+        display: flex;
+        justify-content: center;
+    }
+    .brands .brands-img{
+        display: flex;
+        justify-content: center;
+    }
     }
 /*start most visited ratings*/
 .ratings h4{
