@@ -267,6 +267,27 @@ color: #C84D2D;
 border-radius:0px 0px 8px 8px;
 }
 /*end all product*/
+/*start warranty-policy*/
+.warranty-policy h2{
+    margin-top: 30px;
+    font: Bold 35px/67px Noto Kufi Arabic;
+color: #252526;
+}
+.warranty-policy h6{
+   font: Bold 23px/30px Noto Kufi Arabic;
+letter-spacing: 0px;
+color: #203850;
+}
+.warranty-policy p{
+   font:23px/48px Noto Kufi Arabic;
+color: #203850;
+}
+.warranty-policy p:last-of-type{
+      margin-bottom: 200px;
+}
+
+
+/*end warranty-policy*/
 /*start footer*/
 .footer{
     background-color: #F3F3F4;

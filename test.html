@@ -1,0 +1,198 @@
+<html>
+    <head>
+ <link rel="stylesheet" href="css/bootstrap-rtl.min.css">
+         
+          <script src="js/jquery.min.js"></script>
+          <script src="js/popper.min.js"></script>
+          <script src="js/bootstrap.min.js"></script>
+          <script src="js/countdown.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+        <style>
+            @import url(http://fonts.googleapis.com/css?family=Lato:100,400);
+.mb20{
+    margin-bottom:20px;
+}
+section {
+    padding: 40px 0;
+}
+#timer .countdown-wrapper {
+    margin: 0 auto;
+}
+#timer #countdown {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    color: #eee;
+    text-shadow: 1px 1px 5px black;
+    padding: 40px 0;
+}
+#timer .countdown-wrapper #countdown .timer {
+    margin: 10px;
+    padding: 20px;
+    font-size: 90px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#timer .col-md-4.countdown-wrapper #countdown .timer {
+    margin: 10px;
+    padding: 20px;
+    font-size: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#timer .countdown-wrapper #countdown #hour {
+    -webkit-box-shadow: 0 0 0 5px rgba(92, 184, 92, .5);
+    -moz-box-shadow: 0 0 0 5px rgba(92, 184, 92, .5);
+    box-shadow: 0 0 0 5px rgba(92, 184, 92, .5);
+}
+#timer .countdown-wrapper #countdown #hour:hover {
+    -webkit-box-shadow: 0px 0px 15px 1px rgba(92, 184, 92, 1);
+    -moz-box-shadow: 0px 0px 15px 1px rgba(92, 184, 92, 1);
+    box-shadow: 0px 0px 15px 1px rgba(92, 184, 92, 1);
+}
+#timer .countdown-wrapper #countdown #min {
+    -webkit-box-shadow: 0 0 0 5px rgba(91, 192, 222, .5);
+    -moz-box-shadow: 0 0 0 5px rgba(91, 192, 222, .5);
+    box-shadow: 0 0 0 5px rgba(91, 192, 222, .5);
+}
+#timer .countdown-wrapper #countdown #min:hover {
+    -webkit-box-shadow: 0px 0px 15px 1px rgb(91, 192, 222);
+    -moz-box-shadow: 0px 0px 15px 1px rgb(91, 192, 222);
+    box-shadow: 0px 0px 15px 1px rgb(91, 192, 222);
+}
+#timer .countdown-wrapper #countdown #sec {
+    -webkit-box-shadow: 0 0 0 5px rgba(2, 117, 216, .5);
+    -moz-box-shadow: 0 0 0 5px rgba(2, 117, 216, .5);
+    box-shadow: 0 0 0 5px rgba(2, 117, 216, .5)
+}
+#timer .countdown-wrapper #countdown #sec:hover {
+    -webkit-box-shadow: 0px 0px 15px 1px rgba(2, 117, 216, 1);
+    -moz-box-shadow: 0px 0px 15px 1px rgba(2, 117, 216, 1);
+    box-shadow: 0px 0px 15px 1px rgba(2, 117, 216, 1);
+}
+#timer .countdown-wrapper .card .card-footer .btn {
+    margin: 2px 0;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    #timer .countdown-wrapper #countdown .timer {
+        margin: 10px;
+        padding: 20px;
+        font-size: 65px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+     #timer .countdown-wrapper #countdown .timer {
+        margin: 10px;
+        padding: 20px;
+        font-size: 72px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+}
+@media (max-width: 768px) {
+    #timer .countdown-wrapper #countdown .timer {
+        margin: 10px;
+        padding: 20px;
+        font-size: 73px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+}
+@media (max-width: 767px) {
+    #timer .countdown-wrapper #countdown #hour,
+    #timer .countdown-wrapper #countdown #min,
+    #timer .countdown-wrapper #countdown #sec {
+        font-size: 60px;
+        border-radius: 4%;
+    }
+}
+@media (max-width: 576px){
+    #timer .countdown-wrapper #countdown #hour,
+    #timer .countdown-wrapper #countdown #min,
+    #timer .countdown-wrapper #countdown #sec {
+        font-size: 25px;
+        border-radius: 4%;
+    }
+    #timer .countdown-wrapper #countdown .timer {
+        padding: 13px;
+    }
+}
+        </style>
+</head>
+    <body>
+<div class="container">
+    <section id="timer">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-6 countdown-wrapper text-center mb20">
+                <div class="card">
+                    <div class="card-header">
+                        Upcomming Event countdown timer
+                    </div>
+                    <div class="card-block">
+    	                <div id="countdown">
+            	            <div class="well">
+                        	    <span id="hour" class="timer bg-success"></span>
+                        	    <span id="min" class="timer bg-info"></span>
+                        	    <span id="sec" class="timer bg-primary"></span>
+                        	</div>
+                    	</div>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary">Book now</a>
+                        <a href="#" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">Subscrib for upcomming</a>
+                        <a href="#" class="btn btn-danger">14 remaining</a>
+                    </div>
+                </div>
+    	    </div>
+			<div class="col-xs-12 col-sm-12 col-md-6 countdown-wrapper text-center mb20">
+                <div class="card">
+                    <div class="card-header">
+                        Upcomming Event countdown timer
+                    </div>
+                    <div class="card-block">
+    	                <div id="countdown">
+            	            <div class="well">
+                        	    <span id="hour" class="timer bg-success"></span>
+                        	    <span id="min" class="timer bg-info"></span>
+                        	    <span id="sec" class="timer bg-primary"></span>
+                        	</div>
+                    	</div>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary">Book now</a>
+                        <a href="#" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">Subscrib for upcomming</a>
+                        <a href="#" class="btn btn-danger">14 remaining</a>
+                    </div>
+                </div>
+    	    </div>
+    	</div>
+    </section>
+</div>
+<!-- Subscribe for upcomming event modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Subscribe for our upcomming Events</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">×</span> </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter email"> 
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> 
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-success">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Subscribe for upcomming event modal -->
+        </body>
+    </html>
