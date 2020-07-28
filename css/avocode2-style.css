@@ -288,6 +288,40 @@ color: #203850;
 
 
 /*end warranty-policy*/
+/*start payment-delivery-option*/
+.payment-delivery-option h2,.instruction h2{
+    font: Bold 35px/67px Noto Kufi Arabic;
+color: #252526;
+    margin-top: 30px;
+}
+.payment-delivery-option p,.instruction p{
+font: 23px/42px Noto Kufi Arabic;
+color: #203850;
+    margin-bottom:20px;
+}
+.payment-delivery-option p:last-of-type{
+      margin-bottom: 100px;
+}
+/*end payment-delivery-option*/
+/*start return-policy*/
+.return-policy h2{
+    font: Bold 35px/67px Noto Kufi Arabic;
+color: #252526;
+    margin-top: 30px;
+}
+.return-policy h5{
+    font: Bold 23px/60px Noto Kufi Arabic;
+
+color: #252526;
+}
+.return-policy p{
+    font:23px/40px Noto Kufi Arabic;
+   color: #203850;
+}
+.return-policy p:last-of-type{
+      margin-bottom: 100px;
+}
+/*end return-policy*/
 /*start footer*/
 .footer{
     background-color: #F3F3F4;
