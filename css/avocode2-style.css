@@ -229,6 +229,44 @@ border-radius: 4px;
 
 }
 /*end ablik*/
+/*start all product*/
+.all-product .head-product{
+    background: #E3E3E3 0% 0% no-repeat padding-box;
+    padding: 25px;
+}
+.all-product .head-product h3{
+   font: Bold 25px/47px Noto Kufi Arabic;
+color: #345E8B;
+}
+.all-product .card{
+    border-radius:8px;
+    margin-top: 30px;
+}
+.all-product img{
+    height: 200px;
+}
+
+.all-product .card-body{
+    background: #F8F8F8 0% 0% no-repeat padding-box;
+}
+.all-product h5{
+    font:20px/42px Noto Kufi Arabic;
+color: #252526;
+}
+.all-product p span{
+font: Bold 21px/20px Noto Kufi Arabic;
+letter-spacing: 0px;
+color: #C84D2D;
+}
+
+.all-product  a p{
+    background: #345E8B 0% 0% no-repeat padding-box;
+    color: #fff;
+    margin: -9px;
+    padding: 10px;
+border-radius:0px 0px 8px 8px;
+}
+/*end all product*/
 /*start footer*/
 .footer{
     background-color: #F3F3F4;
