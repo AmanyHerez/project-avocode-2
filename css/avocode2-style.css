@@ -322,6 +322,115 @@ color: #252526;
       margin-bottom: 100px;
 }
 /*end return-policy*/
+/*start login*/
+/*
+.login .login-container{
+    width: 100%;
+    min-height: 100vh;
+   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+*/
+.login .login-container {
+    margin: 30px 174px;
+}
+.login .login-container .login-content{
+    width: 617px;
+border-radius: 0px 25px 25px 0px;
+    overflow: hidden;
+    padding: 55px 55px 37px 55px;
+/*
+    background: #9152f8;
+    background: -webkit-linear-gradient(top, #7579ff, #b224ef);
+*/
+    box-shadow: 10px 10px 10px #ccc,0px -10px 10px #ccc;
+}
+.login .logo img{
+    width:60px;
+    height:60px;
+    text-align: center;
+}
+.login .logo h2{
+    font:  30px/56px Noto Kufi Arabic;
+color: #8C93A0;
+       margin-bottom: 10px;
+    margin-top: 10px;
+}
+/*
+.login .login-img {
+        width: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+    background-image: url(../image/p-login.png);
+}
+*/
+.login .login-content .input-form input{
+    border-radius: 40px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 75%;
+    font: 18px/34px Noto Kufi Arabic;
+    color: #C9D3DC;
+    text-align: right;
+}
+.login   a {
+    font:  18px/34px Noto Kufi Arabic;
+
+color: #C9D3DC;
+}
+
+.login .login-content .but-form button{
+    border-radius: 40px;
+    padding: 10px;
+  margin-top: 30px;
+    margin-bottom: 10px;
+    width: 55%;
+    font:  18px/25px Noto Kufi Arabic;
+color: #FFFFFF;
+    background-color: #345E8B;
+   
+}
+.login .login-img img{
+    width: 245px;
+        height: 557px;
+        border-radius: 25px 0px 0px 25px;
+     box-shadow: 0px 10px 10px #ccc,-10px -10px 10px #ccc;
+}
+
+
+/*
+.login {
+    display:flex;
+      
+}
+.login .sign{
+width: 500px;
+    height: 500px;
+    background-color: red;
+    border-radius: 25px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+  justify-content:center;
+    text-align: center;
+    margin:30px auto;
+    
+}
+*/
+/*end login*/
 /*start footer*/
 .footer{
     background-color: #F3F3F4;
