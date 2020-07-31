@@ -422,6 +422,56 @@ color: #B0C1D1;
 .login .check-login label{
    margin-right: 10px;
 }
+.login .call-content .input-form input{
+    padding: 7px;
+   margin-top: -6px;
+    margin-bottom: 10px;
+    width: 80%;
+    font: 18px/34px Noto Kufi Arabic;
+    color: #C9D3DC;
+    text-align: right;
+    background: #F5F8F9 0% 0% no-repeat padding-box;
+   border-radius: 10px;
+    border: none;
+}
+.login .call-content h2{
+    font: Bold 35px/67px Noto Kufi Arabic;
+color: #252526;
+}
+.login .call-content label{
+    font: 20px/38px Noto Kufi Arabic;
+    color: #252526;
+}
+.login .call-content .input-form textarea{
+    padding: 7px;
+    
+    margin-bottom: 5px;
+    width: 80%;
+    font: 18px/34px Noto Kufi Arabic;
+    color: #C9D3DC;
+    text-align: right;
+    background: #F5F8F9 0% 0% no-repeat padding-box;
+   border-radius: 10px;
+    border: none;
+}
+.login .call-content .but-form button{
+    border-radius: 40px;
+    padding: 7px;
+  margin-top: 30px;
+    margin-bottom: 10px;
+    width: 40%;
+    font:  18px/25px Noto Kufi Arabic;
+color: #FFFFFF;
+    background-color: #345E8B;
+    border: none;
+   
+}
+.login .call-img img{
+        width: 350px;
+       margin-top: 155px;
+        
+       
+}
 /*end login*/
 /*start footer*/
 .footer{
