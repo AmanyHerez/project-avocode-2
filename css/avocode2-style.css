@@ -370,7 +370,7 @@ color: #8C93A0;
     padding: 7px;
     margin-top: 10px;
     margin-bottom: 10px;
-    width: 75%;
+    width: 80%;
     font: 18px/34px Noto Kufi Arabic;
     color: #C9D3DC;
     text-align: right;
@@ -405,6 +405,12 @@ color: #FFFFFF;
 .login .count-img img{
         width: 280px;
         height: 639px;
+        border-radius: 25px 0px 0px 25px;
+        box-shadow: 0px 10px 10px #ccc,-10px -10px 10px #ccc;
+}
+.login .recovery-img img{
+        width: 280px;
+        height: 394px;
         border-radius: 25px 0px 0px 25px;
         box-shadow: 0px 10px 10px #ccc,-10px -10px 10px #ccc;
 }
