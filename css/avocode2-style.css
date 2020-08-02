@@ -323,23 +323,6 @@ color: #252526;
 }
 /*end return-policy*/
 /*start login*/
-/*
-.login .login-container{
-    width: 100%;
-    min-height: 100vh;
-   
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 15px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    z-index: 1;
-}
-*/
 .login .login-container {
     margin: 30px 174px;
 }
@@ -473,6 +456,33 @@ color: #FFFFFF;
        
 }
 /*end login*/
+/*start bage request done*/
+.request-done img {
+    width: 70px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    
+}
+.request-done h4 {
+    font: Bold 26px/49px Noto Kufi Arabic;
+color: #000000;
+    
+}
+.request-done p {
+    font: 18px/34px Noto Kufi Arabic;
+color: #000000;
+        margin-bottom: 35px;
+}
+.request-done button {
+    font: 20px/17px Noto Kufi Arabic;
+    color: #FFFFFF;
+    background: #345E8B 0% 0% no-repeat padding-box;
+    border-radius: 30px;
+    border: none;
+    padding: 10px 60px;
+    margin-bottom: 50px;
+}
+/*start bage request done*/
 /*start footer*/
 .footer{
     background-color: #F3F3F4;
