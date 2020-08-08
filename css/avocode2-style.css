@@ -527,11 +527,77 @@ font: Bold 21px/47px Noto Kufi Arabic;
 color: #C84D2D;
 }
 .current-pro .content-current-pro a{
-
 color: #eee;
 }
 
 /*end current product*/
+/*start special product*/
+.sp-product .span-discount{
+    font: Bold 18px/34px Noto Kufi Arabic;
+    color: #FFFFFF;
+    background: #C84D2D 0% 0% no-repeat padding-box;
+    border-radius: 39px;
+    padding: 3px 20px;
+}
+.sp-product .product-content h5{
+    font: Bold 30px/56px Noto Kufi Arabic;
+color: #252526;
+     margin-top: 21px;
+}
+.sp-product .product-content p{
+ font: Bold 25px/20px Noto Kufi Arabic;
+color: #252526;
+margin-top: 40px;
+}
+.sp-product .product-content .span-product{
+ font: 22px/30px Noto Kufi Arabic;
+color: #C84D2D;
+    padding-right: 27px;
+}
+.sp-product .pragraph{
+ font: 20px/60px Noto Kufi Arabic;
+color: #8C93A0;
+        margin-top: -45px;
+}
+.sp-product .evaluation span{
+    font: 28px/35px Noto Kufi Arabic;
+color: #9298A2;
+ }
+.sp-product .evaluation span .fa-star:before {
+    color: #C84D2D ;
+ }
+.sp-product h5{
+    font:26px/26px Noto Kufi Arabic;
+color: #203850;
+    margin-top: 15px;
+}
+.sp-product button{
+ font: 24px/21px Noto Kufi Arabic;
+color: #FFFFFF;
+    background: #345E8B;
+border-radius: 35px;
+    padding: 10px 20px;
+    border: none;
+}
+.sp-product .sec-content img{
+    width: 550px;
+}
+.sp-product .sec-content h6{
+   font: 27px/32px Noto Kufi Arabic;
+color: #9298A2;
+    margin-top: 5px;
+}
+.sp-product .sec-content i{
+  background-color: #ccc;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+    padding: 10px;
+    font-size: 30px;
+    color: #fff;
+}
+/*end special product*/
 /*start footer*/
 .footer{
     background-color: #F3F3F4;
