@@ -483,6 +483,55 @@ color: #000000;
     margin-bottom: 50px;
 }
 /*start bage request done*/
+/*start current product*/
+.current-pro .content-current-pro{
+    width: 1110px;
+    padding: 30px 55px 30px 55px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+box-shadow: 0px 3px 10px #0000000D;
+border-radius: 20px;
+}
+.current-pro .current{
+    font: Bold 25px/47px Noto Kufi Arabic;
+color: #203850;
+}
+.current-pro .complete{
+    font: Bold 25px/47px Noto Kufi Arabic;
+    color: #FFFFFF;
+    background: #203850 0% 0% no-repeat padding-box;
+    border-radius: 40px;
+        padding: 8px 41px;
+}
+.current-pro .content-current-pro img{
+    width: 210px;
+}
+.current-pro .content-current-pro h4{
+    font: Bold 28px/50px Noto Kufi Arabic;
+color: #252526;
+}
+.current-pro .content-current-pro p{
+   font:  18px/26px Noto Kufi Arabic;
+color: #203850;
+        padding: 0px 0px 5px 156px;
+}
+.current-pro .content-current-pro h6{
+font:25px/45px Noto Kufi Arabic;
+color: #203850;
+}
+.current-pro .content-current-pro span{
+font: Bold 25px/35px Noto Kufi Arabic;
+color: #203850;
+}
+.current-pro .content-current-pro .span-current-pro{
+font: Bold 21px/47px Noto Kufi Arabic;
+color: #C84D2D;
+}
+.current-pro .content-current-pro a{
+
+color: #eee;
+}
+
+/*end current product*/
 /*start footer*/
 .footer{
     background-color: #F3F3F4;
