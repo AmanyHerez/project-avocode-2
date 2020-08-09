@@ -13,7 +13,15 @@
           <link type="text/javascript" src="js/all.min.js">
           <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
           <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        
+        <script>
+          $(document).ready(function(){
+              $('.product-option input[type="radio"]').change(function() {
+                $(this).parents('.product-option').siblings().removeClass('active');
+                $(this).parents('.product-option').addClass('active');
+            }); 
+          });
+           
+      </script>
     </head>
     <body>
 <!--start upper navbar-->
@@ -124,6 +132,39 @@
                             <span><i class="fas fa-star"></i></span>
                         </div>    
                         <h5>أختر اللون:</h5>
+                            <div class="product-option color-option" style="background-color: #3E3A3A;">
+                                        <label>&nbsp;
+                                            <input type="radio" name="color" value="black">
+                                        </label>
+                            </div>
+                            <div class="product-option color-option" style="background-color: #C9C9C9;">
+                                        <label>&nbsp;
+                                            <input type="radio" name="color" value="orange">
+                                        </label>
+                            </div>
+                        <div class="product-option color-option" style="background-color: #FFFFFF;">
+                                        <label>&nbsp;
+                                            <input type="radio" name="color" value="white">
+                                        </label>
+                            </div>
+                        <div class="product-option color-option" style="background-color: #67B5F7;">
+                                        <label>&nbsp;
+                                            <input type="radio" name="color" value="blue">
+                                        </label>
+                            </div>
+                                    <div class="product-option color-option" style="background-color: #FF8C69;">
+                                        <label>&nbsp;
+                                            <input type="radio" name="color" value="orange">
+                                        </label>
+                                    </div>
+                                    <div class="product-option color-option" style="background-color: #ED5199;">
+                                        <label>&nbsp;
+                                            <input type="radio" name="color" value="purple">
+                                        </label>
+                                    </div>
+                        <div class="quantity mt-3">
+                            <span>الكمية:</span>
+                        </div>
                         <div class="text-center">
                         <a  href="#"><button>إضافة الى السلة &nbsp;<i class="fas fa-cart-plus"></i></button></a></div>
                     </div>
