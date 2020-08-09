@@ -10,8 +10,8 @@
           <script src="js/jquery.min.js"></script>
           <script src="js/popper.min.js"></script>
           <script src="js/bootstrap.min.js"></script>
-            <script src="js/jquery-ui.js"></script>
-                   <link rel="stylesheet" href="css/jquery-ui.css">
+<!--            <script src="js/jquery-ui.js"></script>-->
+<!--                   <link rel="stylesheet" href="css/jquery-ui.css">-->
 
           <link type="text/javascript" src="js/all.min.js">
           <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -21,21 +21,6 @@
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
         
 
-          <script>
-              $( function() {
-                $( "#slider-range" ).slider({
-                  range: true,
-                  min: 0,
-                  max: 500,
-                  values: [ 75, 300 ],
-                  slide: function( event, ui ) {
-                    $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
-                  }
-                });
-                $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
-                  " - $" + $( "#slider-range" ).slider( "values", 1 ) );
-              } );
-        </script>
     </head>
     <body>
 <!--start upper navbar-->
@@ -132,55 +117,17 @@
         <div class="row">
         
             <div class="col-lg-8">
-                <p>
-  <label for="amount">Price range:</label>
-  <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
-</p>
- 
-<div id="slider-range"></div>
-                <div class="delivery-content mr-5"> 
-                    <h3 class="text-center">معلومات التوصيل</h3>
-                 <form>
-                      <div class="form-group">
-                          <div class="input-form text-center">
-                          <input style="font-family: FontAwesome;" type="text" placeholder='   &#xf007 &nbsp; الاسم كامل'/>
-                          </div>
-                          <div class="input-form text-center">
-                          <input style="font-family: FontAwesome;" type="email" placeholder=' ادخل البريد الالكتروني &nbsp; &#xf1fa '/>
-                          </div>
-                           <div class="input-form text-center">
-                          <input style="font-family: FontAwesome;" type="tel" placeholder=' ادخل رقم الجوال &nbsp; &#xf10b '/>
-                          </div>
-                          <div class="input-form text-center" >
-                            <select name="city" >
-                               <option selected hidden style="display:none" value="fa-globe">&#xf0ac; الدولة</option>
-                               <option value="1">فلسطين</option>
-                               <option value="2">مصر</option>
-                               <option value="3">تركيا</option>
-                               <option value="4">امريكيا</option>
-                            </select>                 
-                          </div>
-                          <div class="input-form text-center" >
-                            <select name="city" >
-                               <option selected hidden style="display:none" value="fa-globe">&#xf64f; المدينة</option>
-                               <option value="1">غزة</option>
-                               <option value="2">رفح</option>
-                               <option value="3">القاهرة</option>
-                               <option value="4">االقدس</option>
-                            </select>                 
-                          </div>
-                          <div class="input-form text-center">
-                          <input style="font-family: FontAwesome;" type="text"  placeholder='   &#xf015 &nbsp; رقم المبنى'/>
-                          </div>
-                          <div class="input-form text-center">
-                          <input style="font-family: FontAwesome;" type="email" placeholder=' الطابق/ الدور &nbsp; &#x10f5fe '/>
-                          </div>
-                           <div class="input-form text-center">
-                          <input style="font-family: FontAwesome;" type="tel" placeholder=' رقم الشقة &nbsp; &#xf292; '/>
-                          </div>
-                          
-                     </div>
-                    </form>
+                
+
+                <div class="delivery-content mt-5"> 
+                    <h3 class="text-center">الدفع</h3>
+                    <div>
+                        <h1>اختر طريقة الدفع</h1>
+                        <img src="image/banknote.svg">
+                        <img src="image/paypal-logo.svg">
+                        <img src="image/visa-pay-logo.svg">
+                    </div>
+                 
                    </div> 
             </div>
                <div class="col-lg-4">
@@ -211,7 +158,6 @@
                                 </tr>
                               </tbody>
                     </table>
-                       <a><button>شراء الآن</button></a>
                    </div>
            </div> 
      
@@ -299,22 +245,7 @@
     </div>
 </div>
 <!-- Footer -->
-        <script>
-var slider = document.getElementById("myRange");
-var output = document.getElementById("demo");
-output.innerHTML = slider.value;
-
-slider.oninput = function() {
-  output.innerHTML = this.value;
-}
-</script>
-        <script>
-$("#ex25").slider({
-	value: [1, 100],
-	ticks: [1, 50, 100],
-	lock_to_ticks: true
-});
-</script>
+        
         
 </body>
     <script type="text/javascript" >

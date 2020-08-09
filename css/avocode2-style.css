@@ -680,9 +680,21 @@ font:20px/17px Noto Kufi Arabic;
 color: #FFFFFF;
     border: none;
         padding: 8px 50px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
-
+.delivery-info .delivery-content h1{
+    font: Bold 40px/76px Noto Kufi Arabic;
+    color: #000000;
+    margin-bottom: 20px;
+}
+.delivery-info .delivery-content  img{
+   padding: 17px;
+    width: 145px;
+    background: #F5F8F9 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    height: 65px;
+    margin-right: 30px;
+}
 /*end delivery-info*/
 /*start footer*/
 .footer{
