@@ -19,7 +19,22 @@
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!--          <script src="https://kit.fontawesome.com/yourcode.js"></script>-->
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
-        
+        <script>
+            function increaseValue() {
+  var value = parseInt(document.getElementById('number').value, 10);
+  value = isNaN(value) ? 0 : value;
+  value++;
+  document.getElementById('number').value = value;
+}
+
+function decreaseValue() {
+  var value = parseInt(document.getElementById('number').value, 10);
+  value = isNaN(value) ? 0 : value;
+  value < 1 ? value = 1 : '';
+  value--;
+  document.getElementById('number').value = value;
+}
+        </script>
 
     </head>
     <body>
@@ -119,7 +134,8 @@
             <div class="col-lg-9">
                 
 
-                <div class="product-price mt-5"> 
+                <div class="product-price mt-5">
+                    
                     <table class="table table-borderless">
                               <thead>
                                 <tr>
@@ -137,15 +153,21 @@
                                     </th>
                                   <td scope="row">
                                       <h4>علاقي مفرد</h4>
-                                      <p>علاقي مفرد بجرم معدني بلون أسود من الخارج وذهبي من الداخل مع قطعة خشبي</p>
+                                      <p>علاقي مفرد بجرم معدني بلون أسود من الخارج وذهبي من <br>الداخل مع قطعة خشبي</p>
                                   </td>
                                   <td>45.38</td>
-                                  <td>2</td>
+                                  <td>
+                                      <form>
+  <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+  <input type="number" id="number" value="0" />
+  <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+</form>
+                                  </td>
                                   <td style="font-weight: bold">45.38</td>
                                 </tr>
                                        <tr>
                                   <th  class="text-center">
-                                      <img src="image/p-price1.png">
+                                      <img src="image/p-price2.png">
                                       <span>حذف<i class="fas fa-times"></i></span>
                                     </th>
                                   <td scope="row">
@@ -153,12 +175,18 @@
                                       <p>علاقي مفرد بجرم معدني بلون أسود من الخارج وذهبي من الداخل مع قطعة خشبي</p>
                                   </td>
                                   <td>45.38</td>
-                                  <td>2</td>
+                                  <td>
+                                      <form>
+  <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+  <input type="number" id="number" value="0" />
+  <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+</form>
+                                           </td>
                                   <td style="font-weight: bold">45.38</td>
                                 </tr>
                                        <tr>
                                   <th  class="text-center">
-                                      <img src="image/p-price1.png">
+                                      <img src="image/p-price3.png">
                                       <span>حذف<i class="fas fa-times"></i></span>
                                     </th>
                                   <td scope="row">
@@ -166,12 +194,18 @@
                                       <p>علاقي مفرد بجرم معدني بلون أسود من الخارج وذهبي من الداخل مع قطعة خشبي</p>
                                   </td>
                                   <td>45.38</td>
-                                  <td>2</td>
+                                  <td>
+                                         <form>
+  <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+  <input type="number" id="number" value="0" />
+  <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+</form>  
+                                           </td>
                                   <td style="font-weight: bold">45.38</td>
                                 </tr>
                                        <tr>
                                   <th  class="text-center">
-                                      <img src="image/p-price1.png">
+                                      <img src="image/p-price4.png">
                                       <span>حذف<i class="fas fa-times"></i></span>
                                     </th>
                                   <td scope="row">
@@ -179,12 +213,18 @@
                                       <p>علاقي مفرد بجرم معدني بلون أسود من الخارج وذهبي من الداخل مع قطعة خشبي</p>
                                   </td>
                                   <td>45.38</td>
-                                  <td>2</td>
+                                  <td>
+                                       <form>
+  <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+  <input type="number" id="number" value="0" />
+  <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+</form>    
+                                           </td>
                                   <td style="font-weight: bold">45.38</td>
                                 </tr>
                                        <tr>
                                   <th  class="text-center">
-                                      <img src="image/p-price1.png">
+                                      <img src="image/p-price5.png">
                                       <span>حذف<i class="fas fa-times"></i></span>
                                     </th>
                                   <td scope="row">
@@ -192,23 +232,15 @@
                                       <p>علاقي مفرد بجرم معدني بلون أسود من الخارج وذهبي من الداخل مع قطعة خشبي</p>
                                   </td>
                                   <td>45.38</td>
-                                  <td>2</td>
+                                  <td>
+                                           <form>
+  <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+  <input type="number" id="number" value="0" />
+  <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+</form>
+                                           </td>
                                   <td style="font-weight: bold">45.38</td>
                                 </tr>
-                                       <tr>
-                                  <th  class="text-center">
-                                      <img src="image/p-price1.png">
-                                      <span>حذف<i class="fas fa-times"></i></span>
-                                    </th>
-                                  <td scope="row">
-                                      <h4>علاقي مفرد</h4>
-                                      <p>علاقي مفرد بجرم معدني بلون أسود من الخارج وذهبي من الداخل مع قطعة خشبي</p>
-                                  </td>
-                                  <td>45.38</td>
-                                  <td>2</td>
-                                  <td style="font-weight: bold">45.38</td>
-                                </tr>
-                                
                               </tbody>
                             </table>
 
@@ -217,7 +249,7 @@
                <div class="col-lg-3">
                    <div class="delivery-bill mt-5 text-center"> 
                     <h3 class="text-center">الفاتورة</h3>
-                       <div class="code">
+                       <div class="code mt-2">
                            <input style="font-family: FontAwesome;" type="text" placeholder='   &#xf06b  ادخل الرمز الترويجي'/>
                           <span>تحقق</span>
                        </div>
