@@ -635,6 +635,55 @@ color: #8C93A0;
     color: #fff;
 }
 /*end special product*/
+/*start delivery-info*/
+.delivery-info .delivery-content h3,.delivery-info .delivery-bill h3{
+    background: #203850 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #0000000D;
+    border-radius: 4px;
+    font:20px/14px Noto Kufi Arabic;
+    color: #FFFFFF;
+    height: 60px;
+    padding-top: 20px;
+}
+.delivery-info .delivery-content .input-form input{
+    padding: 10px;
+   margin-top: 10px;
+    margin-bottom: 10px;
+    width: 80%;
+    font: 18px/34px Noto Kufi Arabic;
+    color: #C9D3DC;
+    text-align: right;
+    background: #F5F8F9 0% 0% no-repeat padding-box;
+   border-radius: 10px;
+    border: none;
+}
+.delivery-info .delivery-content .input-form select{
+    padding: 15px;
+   margin-top: 10px;
+    margin-bottom: 10px;
+    width: 80%;
+    font: 18px/34px Noto Kufi Arabic;
+    color: #C9D3DC;
+    text-align: right;
+    background: #F5F8F9 0% 0% no-repeat padding-box;
+   border-radius: 10px;
+    border: none;
+}
+.delivery-info .delivery-bill th,.delivery-info .delivery-bill td{
+font: Bold 21px/35px Noto Kufi Arabic;
+color: #252526;
+}
+.delivery-info .delivery-bill button{
+background: #345E8B 0% 0% no-repeat padding-box;
+border-radius: 30px;
+font:20px/17px Noto Kufi Arabic;
+color: #FFFFFF;
+    border: none;
+        padding: 8px 50px;
+    margin-bottom: 10px;
+}
+
+/*end delivery-info*/
 /*start footer*/
 .footer{
     background-color: #F3F3F4;

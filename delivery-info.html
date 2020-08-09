@@ -10,28 +10,32 @@
           <script src="js/jquery.min.js"></script>
           <script src="js/popper.min.js"></script>
           <script src="js/bootstrap.min.js"></script>
+            <script src="js/jquery-ui.js"></script>
+                   <link rel="stylesheet" href="css/jquery-ui.css">
+
           <link type="text/javascript" src="js/all.min.js">
           <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
           <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!--          <script src="https://kit.fontawesome.com/yourcode.js"></script>-->
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+        
 
-         <script>
-  $( function() {
-    $( "#slider-range" ).slider({
-      range: true,
-      min: 0,
-      max: 500,
-      values: [ 75, 300 ],
-      slide: function( event, ui ) {
-        $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
-      }
-    });
-    $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
-      " - $" + $( "#slider-range" ).slider( "values", 1 ) );
-  } );
-  </script>
+          <script>
+              $( function() {
+                $( "#slider-range" ).slider({
+                  range: true,
+                  min: 0,
+                  max: 500,
+                  values: [ 75, 300 ],
+                  slide: function( event, ui ) {
+                    $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+                  }
+                });
+                $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
+                  " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+              } );
+        </script>
     </head>
     <body>
 <!--start upper navbar-->
@@ -127,21 +131,15 @@
          
         <div class="row">
         
-            <div class="col-8">
-                <div class="slidecontainer">
-  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-  
-</div>
-                <input id="ex25" type="text" data-slider-value="[1, 100]" data-slider-ticks="[1, 50, 100]" data-slider-lock-to-ticks="true"/>
-                                
-                
-<p>
+            <div class="col-lg-8">
+                <p>
   <label for="amount">Price range:</label>
   <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
 </p>
  
 <div id="slider-range"></div>
-                <div class="delivery-content mr-5">       
+                <div class="delivery-content mr-5"> 
+                    <h3 class="text-center">معلومات التوصيل</h3>
                  <form>
                       <div class="form-group">
                           <div class="input-form text-center">
@@ -175,7 +173,7 @@
                           <input style="font-family: FontAwesome;" type="text"  placeholder='   &#xf015 &nbsp; رقم المبنى'/>
                           </div>
                           <div class="input-form text-center">
-                          <input style="font-family: FontAwesome;" type="email" placeholder=' الطابق/ الدور &nbsp; &#xf5fd; '/>
+                          <input style="font-family: FontAwesome;" type="email" placeholder=' الطابق/ الدور &nbsp; &#x10f5fe; '/>
                           </div>
                            <div class="input-form text-center">
                           <input style="font-family: FontAwesome;" type="tel" placeholder=' رقم الشقة &nbsp; &#xf292 '/>
@@ -185,8 +183,36 @@
                     </form>
                    </div> 
             </div>
-               <div class="col-4">
-                    
+               <div class="col-lg-4">
+                   <div class="delivery-bill mt-5 text-center"> 
+                    <h3 class="text-center">الفاتورة</h3>
+                       
+                       <table class="table table-borderless">
+                              <thead>
+                                <tr>
+                                  <th scope="col">الإجمالي</th>
+                                  <td scope="col">181.52</td>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th scope="row">عدد الاصناف</th>
+                                  <td>8</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">قيمة الخصم</th>
+                                  <td>52</td>
+                                </tr>
+                                <tr>
+
+                                  <th scope="row " class="border-top">إجمالي الطلب</th>
+                                  <td class="border-top" style="color: #C84D2D;">‭129.52‬</td>
+
+                                </tr>
+                              </tbody>
+                    </table>
+                       <a><button>شراء الآن</button></a>
+                   </div>
            </div> 
      
     </div>
