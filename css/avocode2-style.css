@@ -611,10 +611,67 @@ color: #203850;
     border: none;
     margin-top: 50px;
 }
+.sp-product .quantity form{
+    display: inline-block;
+}
 .sp-product .quantity span{
    font: 28px/31px Noto Kufi Arabic;
 color: #8C93A0;
  
+}
+.sp-product .quantity .value-button {
+  display: inline-block;
+  border: 1px solid #ddd;
+  margin: 0px;
+  width: 40px;
+  height: 20px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 11px 0;
+  background: #eee;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.sp-product .quantity .value-button:hover {
+  cursor: pointer;
+}
+
+.sp-product .quantity form #decrease {
+  border-radius: 50%;
+   width: 45px;
+    height: 50px;
+        font-size: 20px;
+    font-weight: bold;
+}
+
+.sp-product .quantity form #increase {
+  border-radius: 50%;
+    width: 45px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.sp-product .quantity input#number {
+  text-align: center;
+  border: none;
+/*
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+*/
+  margin: 0px;
+  width: 40px;
+  height: 40px;
+}
+
+.sp-product .quantity input[type=number]::-webkit-inner-spin-button,
+.sp-product .quantity input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 .sp-product .sec-content img{
         width: 530px;
@@ -633,6 +690,11 @@ color: #8C93A0;
     padding: 10px;
     font-size: 30px;
     color: #fff;
+}
+.all-product h2{
+    font:30px/14px Noto Kufi Arabic;
+    color: #203850;
+    margin-top: 30px;
 }
 /*end special product*/
 /*start delivery-info*/
