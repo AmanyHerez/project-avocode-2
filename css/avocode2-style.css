@@ -676,6 +676,20 @@ color: #8C93A0;
 .sp-product .sec-content img{
         width: 530px;
 }
+@media(max-width:576px){
+    .sp-product .sec-content img{
+        width: 300px;
+        margin-top: 15px;
+}
+    .sp-product .pragraph{
+ font: 20px/30px Noto Kufi Arabic;
+margin-top: -20px;
+}
+    .sp-product .product-option {
+    height: 41px;
+    width: 41px;
+}
+   
 .sp-product .sec-content h6{
     font: 27px/32px Noto Kufi Arabic;
     color: #9298A2;
