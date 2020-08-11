@@ -92,6 +92,104 @@ color: #FFFFFF;
         justify-content: center;
     }
     }
+/*start timer*/
+.timer{
+    background: #F8F8F8 0% 0% no-repeat padding-box;
+    opacity: 0.5;
+    margin-top: 30px;
+
+}
+.timer h4{
+    font: Bold 25px/22px Noto Kufi Arabic;
+color: #252526;
+    padding: 20px;
+}
+#timer #countdown {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 5px black;
+    padding: 40px 0;
+}
+#timer #countdown .timer {
+    margin: 2px;
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #203850;
+}
+#timer #countdown .span-timer{
+    color: #000;
+    font-weight: bolder;
+}
+#timer  #countdown #hour:hover {
+    -webkit-box-shadow: 0px 0px 15px 1px rgba(92, 184, 92, 1);
+    -moz-box-shadow: 0px 0px 15px 1px rgba(92, 184, 92, 1);
+    box-shadow: 0px 0px 15px 1px rgba(92, 184, 92, 1);
+}
+
+#timer  #countdown #min:hover {
+    -webkit-box-shadow: 0px 0px 15px 1px rgb(91, 192, 222);
+    -moz-box-shadow: 0px 0px 15px 1px rgb(91, 192, 222);
+    box-shadow: 0px 0px 15px 1px rgb(91, 192, 222);
+}
+
+#timer  #countdown #sec:hover {
+    -webkit-box-shadow: 0px 0px 15px 1px rgba(2, 117, 216, 1);
+    -moz-box-shadow: 0px 0px 15px 1px rgba(2, 117, 216, 1);
+    box-shadow: 0px 0px 15px 1px rgba(2, 117, 216, 1);
+}
+#timer  .card .card-footer .btn {
+    margin: 2px 0;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    #timer  #countdown .timer {
+        margin: 10px;
+        padding: 20px;
+        font-size: 65px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+     #timer  #countdown .timer {
+        margin: 10px;
+        padding: 20px;
+        font-size: 72px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+}
+@media (max-width: 768px) {
+    #timer  #countdown .timer {
+        margin: 10px;
+        padding: 20px;
+        font-size: 73px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+}
+@media (max-width: 767px) {
+    #timer  #countdown #hour,
+    #timer  #countdown #min,
+    #timer . #countdown #sec {
+        font-size: 60px;
+        border-radius: 4%;
+    }
+}
+@media (max-width: 576px){
+    #timer  #countdown #hour,
+    #timer #countdown #min,
+    #timer  #countdown #sec {
+        font-size: 25px;
+        border-radius: 4%;
+    }
+    #timer #countdown .timer {
+        padding: 13px;
+    }
+}
+/*end timer*/
 /*start most visited ratings*/
 .ratings h4{
     font: Bold 30px/56px Noto Kufi Arabic;
@@ -455,6 +553,36 @@ color: #FFFFFF;
         
        
 }
+@media(max-width:576px){
+    .login .login-container {
+    margin: 20px 0px;
+}
+    .login .login-container .login-content{
+
+       width: 300px;
+        padding: 0px;
+        box-shadow:none;
+}
+    .login .login-img img,.login .count-img img,.login .recovery-img img  {
+       display: none;      
+}
+    .login .login-content .input-form input{
+        width: 90%;
+        margin-right: -30px;
+}
+  .login .call-img img {
+    width: 165px;
+    margin-top: -635px;
+    margin-right: 181px;
+}
+    .login .call-content label {
+    margin-top: 10px;
+}
+    .login .call-content .input-form input ,.login .call-content .input-form textarea {
+    width: 90%;
+}
+
+}
 /*end login*/
 /*start bage request done*/
 .request-done img {
@@ -685,6 +813,7 @@ color: #8C93A0;
  font: 20px/30px Noto Kufi Arabic;
 margin-top: -20px;
 }
+}
     .sp-product .product-option {
     height: 41px;
     width: 41px;
@@ -770,6 +899,13 @@ color: #FFFFFF;
     border-radius: 10px;
     height: 65px;
     margin-right: 30px;
+}
+@media(max-width:576px){
+    .delivery-info .delivery-content img {
+        width: 100px;
+        padding: 5px;
+        margin-right: 10px;
+    }
 }
 /*end delivery-info*/
 /*start prouduct price*/
