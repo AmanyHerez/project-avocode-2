@@ -93,16 +93,15 @@ color: #FFFFFF;
     }
     }
 /*start timer*/
-.timer{
+.time{
     background: #F8F8F8 0% 0% no-repeat padding-box;
-    opacity: 0.5;
     margin-top: 30px;
-
 }
-.timer h4{
+.time h4{
     font: Bold 25px/22px Noto Kufi Arabic;
-color: #252526;
-    padding: 20px;
+    color: #252526;
+    padding: 19px;
+    margin-right: 30%;
 }
 #timer #countdown {
     font-family: 'Lato', sans-serif;
@@ -110,6 +109,7 @@ color: #252526;
     color: #fff;
     text-shadow: 1px 1px 5px black;
     padding: 40px 0;
+    margin-top: -22px;
 }
 #timer #countdown .timer {
     margin: 2px;
@@ -119,6 +119,7 @@ color: #252526;
     cursor: pointer;
     background-color: #203850;
 }
+
 #timer #countdown .span-timer{
     color: #000;
     font-weight: bolder;
@@ -269,11 +270,23 @@ color: #C84D2D;
 border-radius: 4px;
     color: #fff;
 }
+.all-product h4{
+    font: Bold 30px/0px Noto Kufi Arabic;
+    color: #C84D2D;
+}
+.all-product h6 a{
+font:  20px/0px Noto Kufi Arabic;
+color: #203850;
+}
 /*end request*/
 /*start brand*/
 .brands h4{
-    font: Bold 30px/56px Noto Kufi Arabic;
+    font: Bold 30px/0px Noto Kufi Arabic;
     color: #C84D2D;
+}
+.brands h6 a{
+font:  20px/0px Noto Kufi Arabic;
+color: #203850;
 }
 .brands img{
     width:279px;
@@ -363,6 +376,16 @@ color: #C84D2D;
     margin: -9px;
     padding: 10px;
 border-radius:0px 0px 8px 8px;
+}
+.all-product .sale {
+    padding: 5px 10px;
+    position: absolute;
+    left: 16px;
+    top: 14px;
+    direction: ltr;
+    background: #C84D2D 0% 0% no-repeat padding-box;
+    border-radius: 8px;
+    color: #fff;
 }
 /*end all product*/
 /*start warranty-policy*/

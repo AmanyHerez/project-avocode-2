@@ -8,200 +8,51 @@
 <!--  <link rel="stylesheet" href="/resources/demos/style.css">-->
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script>
-  $( function() {
-    $( "#slider-range" ).slider({
-      range: true,
-      min: 0,
-      max: 500,
-      values: [ 75, 300 ],
-      slide: function( event, ui ) {
-        $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
-      }
+ <script>
+  $(document).ready(function() {
+
+  var doUpdate = function(event, ui) {
+    $('#slide1 .slide-back').remove();
+    $($('#slide1 a').get().reverse()).each(function(i) {
+      var bg = '#fff';
+      if (i == 1) {
+        bg = '#00f';
+      } else
+        bg = '#0f0';
+
+      $('#slide1').append($('<div></div>').addClass('slide-back').width($(this).offset().left - 3).css('background', bg));
     });
-    $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
-      " - $" + $( "#slider-range" ).slider( "values", 1 ) );
-  } );
+  };
+
+  $('#slide1').slider({
+    slide: doUpdate,
+    change: doUpdate,
+    min: 0,
+    max: 100,
+    values: [10, 30, 50]
+  });
+
+  doUpdate();
+});
+
   </script>
-    <script>
-    $(document).ready(function() {
-
-   
-   // inspired by http://jsfiddle.net/arunpjohny/564Lxosz/1/
-   $('.table-responsive-stack').find("th").each(function (i) {
-      
-      $('.table-responsive-stack td:nth-child(' + (i + 1) + ')').prepend('<span class="table-responsive-stack-thead">'+ $(this).text() + ':</span> ');
-      $('.table-responsive-stack-thead').hide();
-   });
-
-   
-   
-   
-   
-$( '.table-responsive-stack' ).each(function() {
-  var thCount = $(this).find("th").length; 
-   var rowGrow = 100 / thCount + '%';
-   //console.log(rowGrow);
-   $(this).find("th, td").css('flex-basis', rowGrow);   
-});
-   
-   
-   
-   
-function flexTable(){
-   if ($(window).width() < 768) {
-      
-   $(".table-responsive-stack").each(function (i) {
-      $(this).find(".table-responsive-stack-thead").show();
-      $(this).find('thead').hide();
-   });
-      
-    
-   // window is less than 768px   
-   } else {
-      
-      
-   $(".table-responsive-stack").each(function (i) {
-      $(this).find(".table-responsive-stack-thead").hide();
-      $(this).find('thead').show();
-   });
-      
-      
-
-   }
-// flextable   
-}      
- 
-flexTable();
-   
-window.onresize = function(event) {
-    flexTable();
-};
-   
-   
-   
-   
-
-  
-// document ready  
-});
-
-
-
-
-    </script>
     <style>
-        .table-responsive-stack tr {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+        .slide {
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 400px;
+    background: red;
 }
-
-
-.table-responsive-stack td,
-.table-responsive-stack th {
-   display:block;
-/*      
-   flex-grow | flex-shrink | flex-basis   */
-   -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
+.slide-back {
+    position:absolute;
+    height:100%;
 }
-
-.table-responsive-stack .table-responsive-stack-thead {
-   font-weight: bold;
-}
-
-@media screen and (max-width: 768px) {
-   .table-responsive-stack tr {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      border-bottom: 3px solid #ccc;
-      display:block;
-      
-   }
-   /*  IE9 FIX   */
-   .table-responsive-stack td {
-      float: left\9;
-      width:100%;
-   }
-}
-
-
     </style>
 </head>
 <body>
  
-<p>
-  <label for="amount">Price range:</label>
-  <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
-</p>
+<div class="slide" id="slide1"></div>
  
-<!--<div id="slider-range"></div>-->
-    <div id="slider-range" class="ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content">
-<!--        هذا لتظليل-->
-        <div class="ui-slider-range ui-corner-all ui-widget-header" style="left: 15%; width: 45%;">
-        </div>
-        <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 0%;"></span>
-        <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 50%;"></span>
-        <div class="ui-slider-range ui-corner-all ui-widget-header" style="left: 15%; width: 45%;">
-        </div>
-        <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 50%;"></span>
-        <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 100%;"></span>
-    </div>
- <div class="container">
-
-   <h2>Common Fruits</h2>
-   <table class="table table-bordered table-striped table-responsive-stack"  id="tableOne">
-      <thead class="thead-dark">
-         <tr>
-            <th>Name</th>
-            <th>Color</th>
-            <th>Taste</th>
-         </tr>
-      </thead>
-      <tbody>
-         <tr>
-            <td>Apple</td>
-            <td>Green and Red</td>
-            <td>Sweet and Tart</td>
-         </tr>
-         <tr>
-            <td>Banana</td>
-            <td>Yellow</td>
-            <td>Sweet and Mushy</td>
-         </tr>
-         <tr>
-            <td>Mango</td>
-            <td>Yellowish Green</td>
-            <td>Tangy</td>
-         </tr>
-         <tr>
-            <td>Orange</td>
-            <td>Orange</td>
-            <td>Sweet and Tangy</td>
-         </tr>
-         <tr>
-            <td>Blueberry</td>
-            <td>Blue</td>
-            <td>Mild Sweetness</td>
-         </tr>
-      </tbody>
-   </table>
-   
-   
-   
-   
-   
-
-
-</div>
-<!-- /.container -->
  
 </body>
 </html>
