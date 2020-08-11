@@ -684,7 +684,7 @@ color: #203850;
         padding: 0px 0px 5px 156px;
 }
 .current-pro .content-current-pro h6{
-font:25px/45px Noto Kufi Arabic;
+font:25px/50px Noto Kufi Arabic;
 color: #203850;
 }
 .current-pro .content-current-pro span{
@@ -697,6 +697,55 @@ color: #C84D2D;
 }
 .current-pro .content-current-pro a{
 color: #eee;
+}
+@media(max-width:576px){
+    .current-pro .current {
+    margin-right: -40px;
+    }
+    .current-pro .content-current-pro {
+    width: 329px;
+    }
+    .current-pro .content-current-pro img{
+        display: none;
+    }
+    .current-pro .content-current-pro h4{
+    font: Bold 20px/15px Noto Kufi Arabic;
+      margin-right: -90px;
+}
+    .current-pro .content-current-pro p{
+   font: 15px/20px Noto Kufi Arabic;
+       margin-right: -90px;
+    padding: 0px;
+        width: 140px;
+}
+    .current-pro .content-current-pro .span-current-pro{
+font: Bold 15px/10px Noto Kufi Arabic;
+}
+    .current-pro .content-current-pro span{
+font: Bold 15px/10px Noto Kufi Arabic;
+}
+    .current-pro .content-current-pro h6{
+font:20px/45px Noto Kufi Arabic;
+                margin-top: -12px;
+
+}
+    
+    .current-pro  .col-6{
+        max-width: 40%;
+    }
+    .current-pro .col-2 {
+            margin-right: -16px;
+    }
+    .current-pro  .col-1{
+        margin-right: 26px;
+    }
+    .current-pro i{
+    font-weight: 900;
+    margin-top: 10px;
+    color: red;
+    margin-left: -11px;
+
+    }
 }
 
 /*end current product*/
