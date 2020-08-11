@@ -409,6 +409,24 @@ color: #203850;
 
 
 /*end warranty-policy*/
+/*start slider range*/
+        .slide {
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 100%;
+    background-color: #203850;
+}
+.slide-back {
+    position:absolute;
+    height:100%;
+}
+        .ui-state-default, .ui-widget-content .ui-state-default{
+            background-color: #203850;
+            border-radius: 50%;
+            font-size: 20px;
+        }
+
+/*end slider range*/
 /*start payment-delivery-option*/
 .payment-delivery-option h2,.instruction h2{
     font: Bold 35px/67px Noto Kufi Arabic;
@@ -872,6 +890,9 @@ margin-top: -20px;
     color: #FFFFFF;
     height: 60px;
     padding-top: 20px;
+}
+.delivery-info .delivery-bill h3{
+  margin-top: 80px;
 }
 .delivery-info .delivery-content .input-form input{
     padding: 10px;

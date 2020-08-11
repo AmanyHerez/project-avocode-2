@@ -5,36 +5,46 @@
           <meta name="viewport" content="width=device-width, initial-scale=1">
           <title>avocode company</title>
           <link href="css/all.min.css" rel="stylesheet">
+           <link rel="stylesheet" href="css/jquery-ui.css">
           <link rel="stylesheet" href="css/bootstrap-rtl.min.css">
           <link rel="stylesheet" href="css/avocode2-style.css">
           <script src="js/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
           <script src="js/popper.min.js"></script>
           <script src="js/bootstrap.min.js"></script>
-<!--            <script src="js/jquery-ui.js"></script>-->
-<!--                   <link rel="stylesheet" href="css/jquery-ui.css">-->
-
-          <link type="text/javascript" src="js/all.min.js">
+        <script src="js/jquery-ui.js"></script>
           <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
           <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<!--          <script src="https://kit.fontawesome.com/yourcode.js"></script>-->
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
-        <script>
-            function increaseValue() {
-  var value = parseInt(document.getElementById('number').value, 10);
-  value = isNaN(value) ? 0 : value;
-  value++;
-  document.getElementById('number').value = value;
-}
+                <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+             <script>
+  $(document).ready(function() {
 
-function decreaseValue() {
-  var value = parseInt(document.getElementById('number').value, 10);
-  value = isNaN(value) ? 0 : value;
-  value < 1 ? value = 1 : '';
-  value--;
-  document.getElementById('number').value = value;
-}
-        </script>
+  var doUpdate = function(event, ui) {
+    $('#slide1 .slide-back').remove();
+    $($('#slide1 a').get().reverse()).each(function(i) {
+      var bg = '#fff';
+      if (i == 1) {
+        bg = '#00f';
+      } else
+        bg = '#0f0';
+
+      $('#slide1').append($('<div></div>').addClass('slide-back').width($(this).offset().left - 3).css('background', bg));
+    });
+  };
+
+  $('#slide1').slider({
+    slide: doUpdate,
+    change: doUpdate,
+    min: 0,
+    max: 100,
+    values: [1, 50, 100]
+  });
+
+  doUpdate();
+});
+
+  </script>
 
     </head>
     <body>
@@ -132,7 +142,7 @@ function decreaseValue() {
         <div class="row">
         
             <div class="col-lg-9">
-                
+                 <div class="slide mb-5" id="slide1"></div>
 
                 <div class="product-price mt-5">
                    <div class="table-responsive">
