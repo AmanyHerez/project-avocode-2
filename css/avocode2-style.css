@@ -410,13 +410,13 @@ color: #203850;
 
 /*end warranty-policy*/
 /*start slider range*/
-        .slide {
+      .delivery-info  .slide {
     margin-top: 20px;
     margin-left: 20px;
     width: 100%;
     background-color: #203850;
 }
-.slide-back {
+.delivery-info .slide-back {
     position:absolute;
     height:100%;
 }
@@ -1052,14 +1052,8 @@ border-radius: 10px;
 }
 .delivery-info .product-price .value-button {
   display: inline-block;
-/*  border: 1px solid #ddd;*/
   margin: 0px;
  width: 10px;
-/*  height: 20px;*/
-/*  text-align: center;*/
-/*  vertical-align: middle;*/
-/*  padding: 11px 0;*/
-/*  background: #eee;*/
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -1073,31 +1067,66 @@ border-radius: 10px;
 }
 
 form #decrease {
-/*  margin-right: -4px;*/
   border-radius: 8px 0 0 8px;
 }
 
 form #increase {
-/*  margin-left: -4px;*/
   border-radius: 0 8px 8px 0;
 }
 .delivery-info .product-price input#number {
-/*  text-align: center;*/
   border: none;
-/*
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-*/
     width: 24px;
   margin: 0px;
-/*  width: 40px;*/
-/*  height: 40px;*/
 }
 
 .delivery-info .product-price input[type=number]::-webkit-inner-spin-button,
 .delivery-info .product-price input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
+}
+@media(max-width:576px){
+    .delivery-info .product-price table thead tr{
+   
+    font: 20px/14px Noto Kufi Arabic;
+
+   
+}
+    .delivery-info .product-price table img{
+        display: none;
+    }
+    .delivery-info .product-price table tr h4{
+   font: Bold 20px/35px Noto Kufi Arabic;
+}
+    .delivery-info .product-price table thead tr th{
+   padding: 10px;
+        font: 20px/14px Noto Kufi Arabic;
+   
+} 
+    .delivery-info .product-price table td{
+   font: 15px/47px Noto Kufi Arabic;
+
+}
+    .delivery-info .product-price table span {
+    font: 12px/34px Noto Kufi Arabic;
+}
+    .delivery-info .product-price table tr p {
+    font: 15px/25px Noto Kufi Arabic;
+    width: 100px;
+    white-space: nowrap;
+        margin-bottom: 15px;
+}
+    .delivery-info .product-price input#number {
+    
+        margin: 0px;
+    color: red;
+    width: 20px;
+    height: 13px;
+}
+    .delivery-info .product-price .value-button {
+            display: block;
+    height: 34px;
+  margin-top: -15px;
+    }
 }
 /*end product price*/
 /*start footer*/

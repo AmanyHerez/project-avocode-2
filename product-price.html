@@ -17,7 +17,7 @@
           <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
                 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
-        <script src="js/slider-range.js"></script>
+        
              <script>
   $(document).ready(function() {
 
@@ -46,6 +46,31 @@
 });
 
   </script>
+        <script>
+          $(document).ready(function(){
+              $('.product-option input[type="radio"]').change(function() {
+                $(this).parents('.product-option').siblings().removeClass('active');
+                $(this).parents('.product-option').addClass('active');
+            }); 
+          });
+           
+      </script>
+        <script>
+            function increaseValue() {
+  var value = parseInt(document.getElementById('number').value, 10);
+  value = isNaN(value) ? 0 : value;
+  value++;
+  document.getElementById('number').value = value;
+}
+
+function decreaseValue() {
+  var value = parseInt(document.getElementById('number').value, 10);
+  value = isNaN(value) ? 0 : value;
+  value < 1 ? value = 1 : '';
+  value--;
+  document.getElementById('number').value = value;
+}
+            </script>
 
     </head>
     <body>
@@ -159,7 +184,7 @@
                               <tbody>
                                 <tr>
                                   <th  class="text-center">
-                                      <img src="image/p-price1.png" >
+                                      <img src="image/p-price1.png" ><br>
                                       <span>حذف<i class="fas fa-times"></i></span>
                                     </th>
                                   <td scope="row">
@@ -178,12 +203,12 @@
                                 </tr>
                                        <tr>
                                   <th  class="text-center">
-                                      <img src="image/p-price2.png">
+                                      <img src="image/p-price2.png"><br>
                                       <span>حذف<i class="fas fa-times"></i></span>
                                     </th>
                                   <td scope="row">
                                       <h4>علاقي مفرد</h4>
-                                      <p>علاقي مفرد بجرم معدني بلون أسود من الخارج وذهبي من الداخل مع قطعة خشبي</p>
+                                        <p>علاقي مفرد بجرم معدني بلون أسود من الخارج وذهبي من <br>الداخل مع قطعة خشبي</p>
                                   </td>
                                   <td>45.38</td>
                                   <td>
@@ -197,12 +222,12 @@
                                 </tr>
                                        <tr>
                                   <th  class="text-center">
-                                      <img src="image/p-price3.png">
+                                      <img src="image/p-price3.png"><br>
                                       <span>حذف<i class="fas fa-times"></i></span>
                                     </th>
                                   <td scope="row">
                                       <h4>علاقي مفرد</h4>
-                                      <p>علاقي مفرد بجرم معدني بلون أسود من الخارج وذهبي من الداخل مع قطعة خشبي</p>
+                                        <p>علاقي مفرد بجرم معدني بلون أسود من الخارج وذهبي من <br>الداخل مع قطعة خشبي</p>
                                   </td>
                                   <td>45.38</td>
                                   <td>
@@ -216,12 +241,12 @@
                                 </tr>
                                        <tr>
                                   <th  class="text-center">
-                                      <img src="image/p-price4.png">
+                                      <img src="image/p-price4.png"><br>
                                       <span>حذف<i class="fas fa-times"></i></span>
                                     </th>
                                   <td scope="row">
                                       <h4>علاقي مفرد</h4>
-                                      <p>علاقي مفرد بجرم معدني بلون أسود من الخارج وذهبي من الداخل مع قطعة خشبي</p>
+                                       <p>علاقي مفرد بجرم معدني بلون أسود من الخارج وذهبي من <br>الداخل مع قطعة خشبي</p>
                                   </td>
                                   <td>45.38</td>
                                   <td>
@@ -235,12 +260,12 @@
                                 </tr>
                                        <tr>
                                   <th  class="text-center">
-                                      <img src="image/p-price5.png">
+                                      <img src="image/p-price5.png"><br>
                                       <span>حذف<i class="fas fa-times"></i></span>
                                     </th>
                                   <td scope="row">
                                       <h4>علاقي مفرد</h4>
-                                      <p>علاقي مفرد بجرم معدني بلون أسود من الخارج وذهبي من الداخل مع قطعة خشبي</p>
+                                     <p>علاقي مفرد بجرم معدني بلون أسود من الخارج وذهبي من <br>الداخل مع قطعة خشبي</p>
                                   </td>
                                   <td>45.38</td>
                                   <td>
